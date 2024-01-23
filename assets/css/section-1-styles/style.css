@@ -1,0 +1,235 @@
+
+/* Layout 1 */
+
+.section-1 {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url('../../images/boy-1.webp')top/cover no-repeat fixed;
+    height: 100vh;
+}
+
+.section-1 .section-1-hero {
+    width: 100%;
+    max-width: 700px;
+}
+
+.section-1-hero h1 {
+    color: #fff;
+    font-size: 5.1rem;
+
+}
+
+.section-1-hero p {
+    color: #eee;
+    max-width: 600px;
+    /* font-size: 1.2rem; */
+    margin: 40px 0;
+}
+
+.btn {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    background: #fff;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "inter", sans-serif;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.btn:hover {
+    transform: scale(0.95);
+}
+
+
+
+/* Layout 2 */
+.layout-2{
+    background: #F3F3F3;
+    padding: 100px 0;
+}
+.layout-2 .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.cards .card{
+    background: #fff;
+
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card > div{
+    padding: 20px;
+}
+
+.card > div h4{
+    color: #000;
+    margin-bottom: 20px;
+}
+
+
+/* Layout 3 */
+
+.join-discord{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    background: #f6f8f8;
+}
+
+.join-discord .join-discord-bg{
+    display: grid;
+    place-items: end;
+    padding: 75px 0;
+    background: url('../../images/boy-long.webp')top/cover no-repeat;
+    min-height: 70vh;
+}
+
+.join-discord-bg h1{
+    color: #fff;
+    font-size: 3rem;
+    max-width: 500px;
+    margin-bottom: 40px;
+}
+
+.join-discord .join-discord-bg p{
+    color: #eee;
+    max-width: 600px;
+    margin: 40px 0;
+}
+
+.join-discord .form-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0 100px;
+}
+
+.form-wrap form{
+    width: 100%;
+    max-width: 23rem;
+}
+
+.form-wrap form h4{
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+}
+
+.form-wrap form p{
+    color: #444;
+    margin-bottom: 80px;
+}
+
+form .form-group{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 24px;
+}
+
+.form-group label{
+    margin-bottom: 7px;
+    font-family: 'Inter';
+    font-size: 1rem;
+    color: #000;
+}
+.form-group input{
+    padding: 15px 20px;
+    font-size: 1rem;
+    color: #000;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+input::placeholder{
+    color: #908D8D;
+    font-family: "Work Sans";
+}
+
+form .login-btn{
+    width: 100%;
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    background: #000;
+    border: none;
+    font-family: 'inter';
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s ease;
+
+}
+
+.login-btn:hover{
+    transform: scale(0.99);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+
+    .section-1 {
+        justify-content: flex-end;
+
+    }
+
+    .layout-2 .cards{
+        grid-template-columns: 1fr;
+    }
+
+    .join-discord{
+        grid-template-columns: 1fr;
+    }
+
+    .form-wrap form{
+        max-width: 100%;
+    }
+
+    .form-wrap form h4{
+        font-size: 1.5rem !important;
+    }
+
+    .form-wrap form p{
+        margin-bottom: 40px;
+    }
+}
